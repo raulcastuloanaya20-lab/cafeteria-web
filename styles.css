@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f1ee;
+  margin: 0;
+}
+
+header {
+  background-color: #6f4e37;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+.imagen {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+/* MENÚ */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.menu-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.ancla {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* INFO */
+.info-box {
+  background: white;
+  border-radius: 8px;
+  margin: 15px;
+}
+
+/* CHATBOT */
+#chatbot {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.botones button {
+  margin: 5px;
+  padding: 8px;
+}
+/* ANIMACIÓN DEL TÍTULO */
+.titulo-animado {
+  animation: aparecer 2s ease-in-out infinite alternate;
+}
+
+@keyframes aparecer {
+  from {
+    letter-spacing: 2px;
+    opacity: 0.7;
+  }
+  to {
+    letter-spacing: 6px;
+    opacity: 1;
+  }
+}
+/* EFECTO HOVER EN IMÁGENES */
+img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
